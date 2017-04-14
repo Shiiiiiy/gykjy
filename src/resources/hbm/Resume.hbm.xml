@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	 <class name="com.uws.model.Resume" table="RESUME">
+	 	 <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+		<property name="USER_ID" type="java.lang.String" column="USER_ID"/>
+		<property name="NAME" type="java.lang.String" column="NAME"/>
+		<property name="GENDER" type="java.lang.String" column="GENDER"/>
+		<property name="NATION" type="java.lang.String" column="NATION"/>
+		<property name="BIRTHDAY" type="java.lang.String" column="BIRTHDAY"/>
+		<property name="EDUCATION_LEVEL" type="java.lang.String" column="EDUCATION_LEVEL"/>
+		<property name="SCHOOL" type="java.lang.String" column="SCHOOL"/>
+		<property name="MAJOR" type="java.lang.String" column="MAJOR"/>
+		<property name="GRADUATION" type="java.lang.String" column="GRADUATION"/>
+		<property name="LANGUAGE_LEVEL" type="java.lang.String" column="LANGUAGE_LEVEL"/>
+		<property name="MARRY" type="java.lang.String" column="MARRY"/>
+		<property name="LIVECITY" type="java.lang.String" column="LIVECITY"/>
+		<property name="HOUSEHOLD" type="java.lang.String" column="HOUSEHOLD"/>
+		<property name="CERTIFICATE_TYPE" type="java.lang.String" column="CERTIFICATE_TYPE"/>
+		<property name="CERTIFICATE_NO" type="java.lang.String" column="CERTIFICATE_NO"/>
+		<property name="JOB_INTENSION" type="java.lang.String" column="JOB_INTENSION"/>
+		<property name="SALARY" type="java.lang.String" column="SALARY"/>
+		<property name="MAIL" type="java.lang.String" column="MAIL"/>
+		<property name="PHONE" type="java.lang.String" column="PHONE"/>
+		<property name="EDUCATION_BG" type="java.lang.String" column="EDUCATION_BG"/>
+		<property name="WORK_EXP" type="java.lang.String" column="WORK_EXP"/>
+		<property name="SKILL" type="java.lang.String" column="SKILL"/>
+		<property name="PROJECT_EXP" type="java.lang.String" column="PROJECT_EXP"/>
+		<property name="HOBBY" type="java.lang.String" column="HOBBY"/>
+		<property name="RESUME_IMAGE" type="java.lang.String" column="RESUME_IMAGE"/>
+		
+		<property name="createTime" type="timestamp" column="REC_TIME"/>
+		<property name="updateTime" type="timestamp" column="UPDATE_TIME"/>
+	 </class>
+
+</hibernate-mapping>

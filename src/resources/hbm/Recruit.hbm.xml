@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	 <class name="com.uws.model.Recruit" table="RECRUIT">
+	 	 <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        
+		<property name="USER_ID"  	type="java.lang.String" column="USER_ID"/>
+		<property name="JOB_NAME" 	type="java.lang.String" column="JOB_NAME"/>
+		<property name="SALARY"  	type="java.lang.String" column="SALARY"/>
+		<property name="WORK_PROPERTY" 	type="java.lang.String" column="WORK_PROPERTY"/>
+		<property name="WORK_LOCATION" 	type="java.lang.String" column="WORK_LOCATION"/>
+		<property name="NEED_NO"  	type="java.lang.String" column="NEED_NO"/>
+		<property name="MAIL"  	type="java.lang.String" column="MAIL"/>
+		<property name="LINK_MAN" 	type="java.lang.String" column="LINK_MAN"/>
+		<property name="PHONE" 	type="java.lang.String" column="PHONE"/>
+		<property name="DUTY" 	type="java.lang.String" column="DUTY"/>
+		<property name="TCONDITION" 	type="java.lang.String" column="TCONDITION"/>
+		<property name="CP_BRIEF" 	type="java.lang.String" column="CP_BRIEF"/>
+		
+		<property name="createTime" 	type="timestamp" column="REC_TIME"/>
+		<property name="updateTime" 	type="timestamp" column="UPDATE_TIME"/>
+	 </class>
+
+</hibernate-mapping>

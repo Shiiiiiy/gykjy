@@ -1,0 +1,12 @@
+﻿@charset "utf-8";
+/*topbar*/
+.topbar {background:#000; height:35px;}
+.welcome a { color:#e60012;text-decoration:none;}
+.welcome { line-height:35px; color:#f2f2f2;}
+.topnav {overflow:hidden; height:35px;}
+.topnav a {color:#f2f2f2;text-decoration:none; line-height:35px; margin-left:10px;}
+.topnav a i { margin-right:5px; font-size:18px; vertical-align:middle;}
+.topnav a:hover {color:#e60012;}
+/*nav*/
+.navbg {height:85px; z-index:4;}
+.headshrunk {-moz-box-shadow:1px 0px 5px #eee;-webkit-box-shadow:1px 0px 5px #eee;box-shadow:1px 0px 5px #eee;}

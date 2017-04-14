@@ -1,0 +1,10 @@
+注意事项：
+
+	gykjy1期 部分页面资源文件过大 
+	发版时需要将
+	apache-tomcat\webapps\gykjy\plugins\
+	下的images文件夹 整个替换为
+	gykjy[资源文件包]中的 images 文件夹
+	[资源文件包]可在svn中单独下载
+
+
